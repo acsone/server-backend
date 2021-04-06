@@ -50,6 +50,9 @@ class ResUsersRole(models.Model):
     def write(self, vals):
         res = super(ResUsersRole, self).write(vals)
         self.update_users()
+        # Workaround for https://github.com/OCA/server-backend/issues/88
+        if "implied_ids" in vals:
+            self.group_id.write({"implied_ids": vals["implied_ids"]})
         return res
 
     def unlink(self):
