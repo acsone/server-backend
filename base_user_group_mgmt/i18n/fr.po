@@ -1,0 +1,559 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_user_group_mgmt
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-17 14:29+0000\n"
+"PO-Revision-Date: 2025-04-17 14:29+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request.py:0
+#, python-format
+msgid "1st Approval"
+msgstr "Validation1"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request.py:0
+#, python-format
+msgid "2nd Approval"
+msgstr "Validation2"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_res_groups__model_access
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_res_users_role__model_access
+msgid "Access Controls"
+msgstr "Contrôles d'accès"
+
+#. module: base_user_group_mgmt
+#: model:ir.model,name:base_user_group_mgmt.model_res_groups
+msgid "Access Groups"
+msgstr "Groupes d'accès"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__action
+msgid "Action"
+msgstr "Action"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__action_confirm_allowed
+msgid "Action Confirm Allowed"
+msgstr "Action confirmation autorisé"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__action_do_update_allowed
+msgid "Action Do Update Allowed"
+msgstr "Action de modification autorisé"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__action_first_approval_allowed
+msgid "Action First Approval Allowed"
+msgstr "Action de validation1 autorisé"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__message_needaction
+msgid "Action Needed"
+msgstr "Action nécessaire"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__action_reject_allowed
+msgid "Action Reject Allowed"
+msgstr "Action de rejet autorisé"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__action_second_approval_allowed
+msgid "Action Second Approval Allowed"
+msgstr "Action de validation2 autorisé"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Action has not been implemented yet."
+msgstr "Action n'a pas encore été implémenté"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__activity_ids
+msgid "Activities"
+msgstr "Activités"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Activité d'exception décoration"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__activity_state
+msgid "Activity State"
+msgstr "Etat de l'activité"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icone du type d'activité"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Add a group to a group"
+msgstr "Ajouter un groupe à un groupe"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Add a group to a user"
+msgstr "Ajouter un group à un utilisateur"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Add group(s) '%(groups_1)s' to user(s) '%(users)s'"
+msgstr "Ajouter le(s) groupe(s) '%(groups_1)s' à(aux) utilisateurs(s) '%(users)s' "
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Add group(s) '%(groups_2)s' to group(s) '%(groups_1)s'"
+msgstr "Ajouter le(s) groupe(s) '%(groups_2)s' à(aux) groupe(s) '%(groups_1)s'"
+
+#. module: base_user_group_mgmt
+#: model_terms:ir.ui.view,arch_db:base_user_group_mgmt.base_security_update_request_request_form_view
+msgid "Approve"
+msgstr "Valider"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request.py:0
+#: model_terms:ir.ui.view,arch_db:base_user_group_mgmt.base_security_update_request_request_form_view
+#, python-format
+msgid "Approved"
+msgstr "Validé"
+
+#. module: base_user_group_mgmt
+#: model:res.groups,name:base_user_group_mgmt.security_management_approver
+msgid "Approver"
+msgstr "Validateur"
+
+#. module: base_user_group_mgmt
+#: model:res.groups,name:base_user_group_mgmt.security_management_super_approver
+msgid "Approver (can validate its requests)"
+msgstr "Créateur et validateur"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__approver_1_user_id
+msgid "Approver 1"
+msgstr "Validateur1"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__approver_2_user_id
+msgid "Approver 2"
+msgstr "Validateur2"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre pièces jointes"
+
+#. module: base_user_group_mgmt
+#: model:ir.model,name:base_user_group_mgmt.model_base_security_update_request
+msgid "Base Security Update"
+msgstr "Mise à jour de la sécurité"
+
+#. module: base_user_group_mgmt
+#: model:ir.model,name:base_user_group_mgmt.model_base_security_update_request_line
+msgid "Base Security Update Line"
+msgstr "Ligne de mise à jour de la sécurité"
+
+#. module: base_user_group_mgmt
+#: model_terms:ir.ui.view,arch_db:base_user_group_mgmt.base_security_update_request_request_form_view
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__create_uid
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__create_date
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__date
+msgid "Date"
+msgstr "Date"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__name
+msgid "Description"
+msgstr "Description"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__display_name
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Done"
+msgstr "Fait"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request.py:0
+#, python-format
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (Partenaires)"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,help:base_user_group_mgmt.field_base_security_update_request__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icône de police impressionnante, par exemple fa-tasks"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_res_users__groups_id
+msgid "Groups"
+msgstr "Groupes"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__group_1_ids
+#, python-format
+msgid "Groups 1"
+msgstr "Groupe(s)"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__group_2_ids
+#, python-format
+msgid "Groups 2"
+msgstr "Sous-groupe(s)"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__has_message
+msgid "Has Message"
+msgstr "A des message(s)"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__id
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__activity_exception_icon
+msgid "Icon"
+msgstr "Icon"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,help:base_user_group_mgmt.field_base_security_update_request__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icone pour indiquer une activité d'exception."
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,help:base_user_group_mgmt.field_base_security_update_request__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si coché, de nouveaux messages demandent votre attention."
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,help:base_user_group_mgmt.field_base_security_update_request__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si coché, des messages ont une erreur de livraison."
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_res_groups__implied_ids
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_res_users_role__implied_ids
+msgid "Inherits"
+msgstr "Hérite"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__message_is_follower
+msgid "Is Follower"
+msgstr "Est abonné"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__is_group_1_ids_visible
+msgid "Is Group 1 Ids Visible"
+msgstr ""
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__is_group_2_ids_visible
+msgid "Is Group 2 Ids Visible"
+msgstr ""
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__is_user_ids_visible
+msgid "Is User Ids Visible"
+msgstr ""
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request____last_update
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line____last_update
+msgid "Last Modified on"
+msgstr "Dernière mise à jour le"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__write_uid
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__write_date
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__line_ids
+#: model_terms:ir.ui.view,arch_db:base_user_group_mgmt.base_security_update_request_request_form_view
+msgid "Lines"
+msgstr "Lignes"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Pièce jointe principale"
+
+#. module: base_user_group_mgmt
+#: model:res.groups,name:base_user_group_mgmt.security_management_manager
+msgid "Manager"
+msgstr "Gestionnaire"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur de livraison du message"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Ma date limite d'activité"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Prochaine date limite d'activité"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__activity_summary
+msgid "Next Activity Summary"
+msgstr "Prochain résumé d'activité"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__activity_type_id
+msgid "Next Activity Type"
+msgstr "Prochain type d'activité"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,help:base_user_group_mgmt.field_base_security_update_request__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,help:base_user_group_mgmt.field_base_security_update_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de message avec une erreur de livraison"
+
+#. module: base_user_group_mgmt
+#: model_terms:ir.ui.view,arch_db:base_user_group_mgmt.base_security_update_request_request_form_view
+msgid "Reject"
+msgstr "Rejeter"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request.py:0
+#: model_terms:ir.ui.view,arch_db:base_user_group_mgmt.base_security_update_request_request_form_view
+#, python-format
+msgid "Rejected"
+msgstr "Rejeté"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Remove a group from a group"
+msgstr "Enlever un groupe d'un groupe"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Remove a group from a user"
+msgstr "Enlever un groupe d'un utilisateur"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Remove group(s) '%(groups_1)s' from user(s) '%(users)s'"
+msgstr "Enlever le(s) groupe(s) '%(groups_1)s' des utilisateur(s) '%(users)s'"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Remove group(s) '%(groups_2)s' from group(s) '%(groups_1)s'"
+msgstr "Enlever le(s) groupe(s) '%(groups_2)s' du/des groupe(s) '%(groups_1)s'"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__request_id
+msgid "Request"
+msgstr "Demande"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__activity_user_id
+msgid "Responsible User"
+msgstr "Utilisateur responsable"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_res_groups__rule_groups
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_res_users_role__rule_groups
+msgid "Rules"
+msgstr "Règles"
+
+#. module: base_user_group_mgmt
+#: model:ir.module.category,name:base_user_group_mgmt.category_security_management
+msgid "Security Management"
+msgstr "Gestion de la sécurité"
+
+#. module: base_user_group_mgmt
+#: model:ir.actions.act_window,name:base_user_group_mgmt.base_security_update_request_request_act_window
+#: model:ir.ui.menu,name:base_user_group_mgmt.base_security_update_request_request_menu
+msgid "Security Update Requests"
+msgstr "Demande(s) de mise à jour de la sécurité"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__state
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__state
+msgid "State"
+msgstr "Etat"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,help:base_user_group_mgmt.field_base_security_update_request__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Statut basé sur les activités\n"
+"En retard : La date d'échéance est déjà dépassée\n "
+"Aujourd'hui : La date d'activité est aujourd'hui\n"
+"Planifié : Activités futures."
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#, python-format
+msgid "This action can't be processed. %(request)s, %(action)s"
+msgstr "Cette action ne peut pas être traité. %(request)s, %(action)s"
+
+#. module: base_user_group_mgmt
+#: model_terms:ir.ui.view,arch_db:base_user_group_mgmt.base_security_update_request_request_search_view
+msgid "To approve"
+msgstr "A approuver"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,help:base_user_group_mgmt.field_base_security_update_request__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Type de l'activité d'exception enregistrée "
+
+#. module: base_user_group_mgmt
+#: model:ir.model,name:base_user_group_mgmt.model_res_users
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request__user_id
+#: model:res.groups,name:base_user_group_mgmt.security_management_user
+msgid "User"
+msgstr "Utilisateur"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_base_security_update_request_line__user_ids
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_res_groups__users
+#: model:ir.model.fields,field_description:base_user_group_mgmt.field_res_users_role__users
+#, python-format
+msgid "Users"
+msgstr "Utilisateurs"
+
+#. module: base_user_group_mgmt
+#: model:ir.model.fields,help:base_user_group_mgmt.field_res_groups__implied_ids
+#: model:ir.model.fields,help:base_user_group_mgmt.field_res_users_role__implied_ids
+msgid "Users of this group automatically inherit those groups"
+msgstr "Les utilisateurs de ce groupe héritent automatiquement de ces groupes"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request.py:0
+#: code:addons/base_user_group_mgmt/models/base_security_update_request.py:0
+#, python-format
+msgid "You can't approve this request. %(name)s"
+msgstr "Vous ne pouvez pas valider cette demande. %(name)s"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request.py:0
+#, python-format
+msgid "You can't confirm this request. %(name)s"
+msgstr "Vous ne pouvez pas confirmer cette demande. %(name)s"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request.py:0
+#, python-format
+msgid "You can't reject this request. %(name)s"
+msgstr "Vous ne pouvez pas rejeter cette demande. %(name)s"
+
+#. module: base_user_group_mgmt
+#. odoo-python
+#: code:addons/base_user_group_mgmt/models/base_security_update_request_line.py:0
+#, python-format
+msgid "to Do"
+msgstr "à faire"
