@@ -1,0 +1,164 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_user_group_mgmt_role
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-17 14:30+0000\n"
+"PO-Revision-Date: 2025-04-17 14:30+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: base_user_group_mgmt_role
+#: model:ir.model.fields,field_description:base_user_group_mgmt_role.field_base_security_update_request_line__action
+msgid "Action"
+msgstr "Action"
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Add a group to a role"
+msgstr "Ajouter un groupe à un rôle"
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Add a role to a user"
+msgstr "Ajouter un rôle à un utilisateur"
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Add group(s) '%(groups)s' to role(s) '%(roles)s'"
+msgstr "Ajouter le(s) groupe(s) '%(groups)s' à(aux) rôle(s) '%(roles)s'"
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Add role(s) '%(roles)s' to user(s) '%(users)s'"
+msgstr "Ajouter rôle(s) '%(roles)s' à/(aux) utilisateur(s) '%(users)s'"
+
+#. module: base_user_group_mgmt_role
+#: model:ir.model,name:base_user_group_mgmt_role.model_base_security_update_request_line
+msgid "Base Security Update Line"
+msgstr "Ligne de mise à jour de la sécurité"
+
+#. module: base_user_group_mgmt_role
+#: model_terms:ir.ui.view,arch_db:base_user_group_mgmt_role.base_security_update_request_request_line_form_view
+msgid "Date from"
+msgstr "De"
+
+#. module: base_user_group_mgmt_role
+#: model_terms:ir.ui.view,arch_db:base_user_group_mgmt_role.base_security_update_request_request_line_form_view
+msgid "Date to"
+msgstr "A"
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Groups 1"
+msgstr "Groupe(s)"
+
+#. module: base_user_group_mgmt_role
+#: model:ir.model.fields,field_description:base_user_group_mgmt_role.field_base_security_update_request_line__is_role_edit_data_visible
+msgid "Is Role Edit Data Visible"
+msgstr ""
+
+#. module: base_user_group_mgmt_role
+#: model:ir.model.fields,field_description:base_user_group_mgmt_role.field_base_security_update_request_line__is_role_ids_visible
+msgid "Is Role Ids Visible"
+msgstr ""
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Remove a group from a role"
+msgstr "Enlever un groupe d'un rôle"
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Remove a role from a user"
+msgstr "Enlever un rôle d'un utilisateur"
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Remove group(s) '%(groups)s' from role(s) '%(roles)s'"
+msgstr "Enlever le(s) groupe(s) '%(groups)s' de(s) rôle(s) '%(roles)s'"
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Remove role(s) '%(roles)s' from user(s) '%(users)s'"
+msgstr "Enlever rôle(s)'%(roles)s' de(s) utilisateur(s) '%(users)s'"
+
+#. module: base_user_group_mgmt_role
+#: model:ir.model.fields,field_description:base_user_group_mgmt_role.field_base_security_update_request_line__role_date_from
+msgid "Role Date From"
+msgstr "Rôle date de"
+
+#. module: base_user_group_mgmt_role
+#: model:ir.model.fields,field_description:base_user_group_mgmt_role.field_base_security_update_request_line__role_date_to
+msgid "Role Date To"
+msgstr "Rôle date à"
+
+#. module: base_user_group_mgmt_role
+#: model:ir.model.fields,field_description:base_user_group_mgmt_role.field_res_users__role_line_ids
+#: model:ir.model.fields,field_description:base_user_group_mgmt_role.field_res_users_role__line_ids
+msgid "Role lines"
+msgstr "Lignes du rôle"
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#: model:ir.model.fields,field_description:base_user_group_mgmt_role.field_base_security_update_request_line__role_ids
+#, python-format
+msgid "Roles"
+msgstr "Rôles"
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Update role of user"
+msgstr "Mettre à jour le rôle d'un utilisateur"
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Update role(s) '%(roles)s' of user(s) '%(users)s'"
+msgstr "Mettre à jour le(s) rôle(s) '%(roles)s' de(s) utilisateur(s) '%(users)s'"
+
+#. module: base_user_group_mgmt_role
+#: model:ir.model,name:base_user_group_mgmt_role.model_res_users
+msgid "User"
+msgstr "Utilisateur"
+
+#. module: base_user_group_mgmt_role
+#: model:ir.model,name:base_user_group_mgmt_role.model_res_users_role
+msgid "User role"
+msgstr "Rôle utilisateur"
+
+#. module: base_user_group_mgmt_role
+#. odoo-python
+#: code:addons/base_user_group_mgmt_role/models/base_security_update_request_line.py:0
+#, python-format
+msgid "Users"
+msgstr "Utilisateurs"
