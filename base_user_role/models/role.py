@@ -3,7 +3,8 @@
 import datetime
 import logging
 
-from odoo import SUPERUSER_ID, _, api, fields, models
+from odoo import api, fields, models
+from odoo.api import SUPERUSER_ID
 
 _logger = logging.getLogger(__name__)
 
@@ -105,7 +106,7 @@ class ResUsersRole(models.Model):
 
     def copy(self, default=None):
         self.ensure_one()
-        default = dict(default or {}, name=_("%s (copy)", self.name))
+        default = dict(default or {}, name=self.env._("%s (copy)", self.name))
         return super().copy(default)
 
     def update_users(self):
@@ -117,7 +118,14 @@ class ResUsersRole(models.Model):
     @api.model
     def cron_update_users(self):
         logging.info("Update user roles")
-        self.search([]).update_users()
+        offset = 0
+        batch = 2000
+        while True:
+            roles = self.search([], offset=offset, limit=batch)
+            if not roles:
+                break
+            roles.update_users()
+            offset += batch
 
     def show_rule_ids(self):
         action = self.env["ir.actions.actions"]._for_xml_id("base.action_rule")

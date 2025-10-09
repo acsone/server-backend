@@ -61,7 +61,7 @@ class TestUserRole(TransactionCase):
                 "name": "User 2",
                 "company_id": cls.company1.id,
                 "company_ids": [(6, 0, [cls.company1.id, cls.company2.id])],
-                "groups_id": [(6, 0, cls.env.ref("base.group_erp_manager").ids)],
+                "group_ids": [(6, 0, cls.env.ref("base.group_erp_manager").ids)],
                 "login": "multicompany_user_1",
             }
         )
@@ -70,7 +70,7 @@ class TestUserRole(TransactionCase):
                 "name": "User 2",
                 "company_id": cls.company2.id,
                 "company_ids": [(6, 0, [cls.company2.id])],
-                "groups_id": [(6, 0, cls.env.ref("base.group_user").ids)],
+                "group_ids": [(6, 0, cls.env.ref("base.group_user").ids)],
                 "login": "multicompany_user_2",
             }
         )
@@ -84,7 +84,7 @@ class TestUserRole(TransactionCase):
 
     def test_role_1(self):
         self.user_id.write({"role_line_ids": [(0, 0, {"role_id": self.role1_id.id})]})
-        user_group_ids = sorted({group.id for group in self.user_id.groups_id})
+        user_group_ids = sorted({group.id for group in self.user_id.group_ids})
         role_group_ids = self.role1_id.trans_implied_ids.ids
         role_group_ids.append(self.role1_id.group_id.id)
         role_group_ids = sorted(set(role_group_ids))
@@ -92,7 +92,7 @@ class TestUserRole(TransactionCase):
 
     def test_role_2(self):
         self.user_id.write({"role_line_ids": [(0, 0, {"role_id": self.role2_id.id})]})
-        user_group_ids = sorted({group.id for group in self.user_id.groups_id})
+        user_group_ids = sorted({group.id for group in self.user_id.group_ids})
         role_group_ids = self.role2_id.trans_implied_ids.ids
         role_group_ids.append(self.role2_id.group_id.id)
         role_group_ids = sorted(set(role_group_ids))
@@ -107,7 +107,7 @@ class TestUserRole(TransactionCase):
                 ]
             }
         )
-        user_group_ids = sorted({group.id for group in self.user_id.groups_id})
+        user_group_ids = sorted({group.id for group in self.user_id.group_ids})
         role1_group_ids = self.role1_id.trans_implied_ids.ids
         role1_group_ids.append(self.role1_id.group_id.id)
         role2_group_ids = self.role2_id.trans_implied_ids.ids
@@ -130,7 +130,7 @@ class TestUserRole(TransactionCase):
                 ]
             }
         )
-        user_group_ids = sorted({group.id for group in self.user_id.groups_id})
+        user_group_ids = sorted({group.id for group in self.user_id.group_ids})
         role1_group_ids = self.role1_id.trans_implied_ids.ids
         role1_group_ids.append(self.role1_id.group_id.id)
         role_group_ids = sorted(set(role1_group_ids))
@@ -151,18 +151,18 @@ class TestUserRole(TransactionCase):
             }
         )
         # Check user has groups from role1 and role2
-        self.assertLessEqual(role1_groups, self.user_id.groups_id)
-        self.assertLessEqual(role2_groups, self.user_id.groups_id)
+        self.assertLessEqual(role1_groups, self.user_id.group_ids)
+        self.assertLessEqual(role2_groups, self.user_id.group_ids)
         # Remove role2
         self.role2_id.unlink()
         # Check user has groups from only role1
-        self.assertLessEqual(role1_groups, self.user_id.groups_id)
-        self.assertFalse(role2_groups <= self.user_id.groups_id)
+        self.assertLessEqual(role1_groups, self.user_id.group_ids)
+        self.assertFalse(role2_groups <= self.user_id.group_ids)
         # Remove role1
         self.role1_id.unlink()
         # Check user has no groups from role1 and role2
-        self.assertFalse(role1_groups <= self.user_id.groups_id)
-        self.assertFalse(role2_groups <= self.user_id.groups_id)
+        self.assertFalse(role1_groups <= self.user_id.group_ids)
+        self.assertFalse(role2_groups <= self.user_id.group_ids)
 
     def test_role_line_unlink(self):
         # Get role1 and role2 groups
@@ -179,22 +179,22 @@ class TestUserRole(TransactionCase):
             }
         )
         # Check user has groups from role1 and role2
-        self.assertLessEqual(role1_groups, self.user_id.groups_id)
-        self.assertLessEqual(role2_groups, self.user_id.groups_id)
+        self.assertLessEqual(role1_groups, self.user_id.group_ids)
+        self.assertLessEqual(role2_groups, self.user_id.group_ids)
         # Remove role2 from the user
         self.user_id.role_line_ids.filtered(
             lambda rl: rl.role_id.id == self.role2_id.id
         ).unlink()
         # Check user has groups from only role1
-        self.assertLessEqual(role1_groups, self.user_id.groups_id)
-        self.assertFalse(role2_groups <= self.user_id.groups_id)
+        self.assertLessEqual(role1_groups, self.user_id.group_ids)
+        self.assertFalse(role2_groups <= self.user_id.group_ids)
         # Remove role1 from the user
         self.user_id.role_line_ids.filtered(
             lambda rl: rl.role_id.id == self.role1_id.id
         ).unlink()
         # Check user has no groups from role1 and role2
-        self.assertFalse(role1_groups <= self.user_id.groups_id)
-        self.assertFalse(role2_groups <= self.user_id.groups_id)
+        self.assertFalse(role1_groups <= self.user_id.group_ids)
+        self.assertFalse(role2_groups <= self.user_id.group_ids)
 
     def test_default_user_roles(self):
         self.default_user.write(
@@ -222,7 +222,7 @@ class TestUserRole(TransactionCase):
         role.with_context(allowed_company_ids=self.company1.ids).read()
         # Downgrade multicompany user 1 to common user
         self.multicompany_user_1.write(
-            {"groups_id": [(6, 0, self.env.ref("base.group_user").ids)]}
+            {"group_ids": [(6, 0, self.env.ref("base.group_user").ids)]}
         )
         # Check that the user cannot read multicompany data again since it lost
         # its admin privileges
@@ -247,7 +247,7 @@ class TestUserRole(TransactionCase):
         # Check that the role has the same groups as the user
         role_id = result["res_id"]
         role = self.role_model.browse([role_id])
-        user_group_ids = sorted(set(self.user_id.groups_id.ids))
+        user_group_ids = sorted(set(self.user_id.group_ids.ids))
         role_group_ids = sorted(set(role.trans_implied_ids.ids))
         self.assertEqual(user_group_ids, role_group_ids)
 
@@ -261,7 +261,7 @@ class TestUserRole(TransactionCase):
         self.assertFalse(self.user_id.show_alert)
 
     def test_group_groups_into_role(self):
-        user_group_ids = self.user_id.groups_id.ids
+        user_group_ids = self.user_id.group_ids.ids
         # Check that there is not a role with name: Test Role
         self.assertFalse(self.role_model.search([("name", "=", "Test Role")]))
         # Call create_role function to group groups into a role
