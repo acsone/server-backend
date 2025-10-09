@@ -31,14 +31,9 @@ class ResUsers(models.Model):
 
     @api.model
     def _default_role_lines(self):
-        # v19+: use portal template user as default template holder
         template_user = self.env.ref(
             "base.template_portal_user_id", raise_if_not_found=False
         )
-        # Backward-compat for older versions
-        if not template_user:
-            template_user = self.env.ref("base.default_user", raise_if_not_found=False)
-
         default_values = []
         if template_user:
             for role_line in template_user.with_context(
