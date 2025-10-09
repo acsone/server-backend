@@ -45,6 +45,8 @@
                                 name="implied_ids"
                                 nolabel="1"
                                 widget="many2many_tags"
+                                class="w-100"
+                                context="{'tree_view_ref': 'base_user_role.view_res_groups_tree_for_role'}"
                                 options="{'no_create': True}"
                             />
                         </page>
@@ -102,4 +104,15 @@
         parent="base.menu_users"
         action="action_res_users_role_tree"
     />
+    <!-- Helper list view for the implied groups picker: show Name first, then Privilege -->
+    <record id="view_res_groups_tree_for_role" model="ir.ui.view">
+        <field name="name">res.groups.tree.for.role</field>
+        <field name="model">res.groups</field>
+        <field name="arch" type="xml">
+            <list string="Implied Groups">
+                <field name="name" />
+                <field name="privilege_id" />
+            </list>
+        </field>
+    </record>
 </odoo>
