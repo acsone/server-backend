@@ -20,7 +20,7 @@ class TestUserRole(TransactionCase):
 
         cls.company1 = cls.env.ref("base.main_company")
         cls.company2 = cls.env["res.company"].create({"name": "company2"})
-        cls.default_user = cls.env.ref("base.default_user")
+        cls.default_user = cls.env.ref("base.template_portal_user_id")
         cls.user_id = cls.user_model.create(
             {"name": "USER TEST (ROLES)", "login": "user_test_roles"}
         )
