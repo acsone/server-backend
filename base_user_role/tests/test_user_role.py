@@ -240,7 +240,7 @@ class TestUserRole(TransactionCase):
         role_id = result["res_id"]
         role = self.role_model.browse([role_id])
         user_group_ids = sorted(set(self.user_id.group_ids.ids))
-        role_group_ids = sorted(set(role.all_implied_ids.ids))
+        role_group_ids = sorted(set(role.implied_ids.ids))
         self.assertEqual(user_group_ids, role_group_ids)
 
     def test_show_alert_computation(self):
