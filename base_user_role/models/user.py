@@ -87,6 +87,14 @@ class ResUsers(models.Model):
                 role = role_line.role_id
                 group_ids += role_groups[role]
             group_ids = list(set(group_ids))  # Remove duplicates IDs
+            # Do not drop administrator rights if the user already has them
+            admin_group = self.env.ref("base.group_system", raise_if_not_found=False)
+            if (
+                admin_group
+                and admin_group.id in user.group_ids.ids
+                and admin_group.id not in group_ids
+            ):
+                group_ids.append(admin_group.id)
             groups_to_add = list(set(group_ids) - set(user.group_ids.ids))
             groups_to_remove = list(set(user.group_ids.ids) - set(group_ids))
             to_add = [(4, gr) for gr in groups_to_add]
