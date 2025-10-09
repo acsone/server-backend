@@ -41,11 +41,10 @@ class ResUsersRole(models.Model):
         required=False,
     )
     model_access_count = fields.Integer(compute="_compute_model_access_ids")
-    group_category_id = fields.Many2one(
-        related="group_id.category_id",
-        default=lambda cls: cls.env.ref("base_user_role.ir_module_category_role").id,
-        string="Associated category",
-        help="Associated group's category",
+    group_privilege_id = fields.Many2one(
+        related="group_id.privilege_id",
+        string="Associated privilege",
+        help="Privilege assigned to the associated group.",
         readonly=False,
     )
 
