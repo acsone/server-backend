@@ -77,13 +77,8 @@ class ResUsers(models.Model):
         # We obtain all the groups associated to each role first, so that
         # it is faster to compare later with each user's groups.
         for role in self.mapped("role_line_ids.role_id"):
-            role_groups[role] = list(
-                set(
-                    role.group_id.ids
-                    + role.implied_ids.ids
-                    + role.trans_implied_ids.ids
-                )
-            )
+            # v19: use transitive implied groups provided by ORM
+            role_groups[role] = list(set(role.all_implied_ids.ids))
         for user in self:
             if not user.role_line_ids and not force:
                 continue
